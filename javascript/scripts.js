@@ -1,11 +1,17 @@
-var button = document.getElementsByClassName('button');
-
-function showText() {
-  for(i = 0; i < button.length; i++) {
-      alert(button[i].innerText);
-  }
+function getButtonClass() {
+	var navigation = document.getElementById('nav');
+	var elementsWithButtonClassinNav = navigation.getElementsByClassName('button');
+	return elementsWithButtonClassinNav;
 }
 
-window.onload = function() {
-  var timeout = setTimeout(showText, 1000);
+var x = getButtonClass();
+var y = x.length; 
+console.log(y);
+
+function showElementsContent(a,b){
+	for(var i=0; i<y; i++){
+		alert(x[i].innerText);
+	}
 }
+
+showElementsContent(x,y); 
