@@ -5,11 +5,12 @@ function getButtonClass() {
 }
 
 var x = getButtonClass();
+console.log(x);	
 var y = x.length; 
 console.log(y);
 
-function showElementsContent(a,b){
-	for(var i=0; i<y; i++){
+function showElementsContent(x,y){
+	for(var i = 0; i < y; i ++){
 		alert(x[i].innerText);
 	}
 }
